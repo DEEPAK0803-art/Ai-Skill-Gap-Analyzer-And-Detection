@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Detection Results - Skill Gap Analyzer</title>
+    <meta name="description" content="AI-detected career matches based on your resume skills.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" style="padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 10;">
+        <div class="logo font-bold text-gradient" style="font-size: 1.5rem;">Skill Gap Analyzer</div>
+        <div class="nav-links">
+            <a href="/" style="color: var(--text-primary); margin-right: 1.5rem; text-decoration: none;">Home</a>
+            {% if session.user_id %}
+                <a href="/dashboard" style="color: var(--text-primary); margin-right: 1.5rem; text-decoration: none;">Dashboard</a>
+                <a href="/logout" class="btn-primary" style="padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none;">Logout</a>
+            {% else %}
+                <a href="/login" class="btn-primary" style="padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none;">Login</a>
+            {% endif %}
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="header text-center">
+            <h1 class="gradient-text">Detected Career Matches</h1>
+            <p class="subtitle">AI-powered career role suggestions based on your resume skills</p>
+            <a href="/" class="back-link"><i class="fas fa-arrow-left"></i> Analyze another resume</a>
+        </header>
+
+        <!-- Extracted skills summary -->
+        <section class="glass-card fade-in" id="extracted-summary" style="margin-bottom: 2rem;">
+            <h2 class="card-title"><i class="fas fa-brain text-primary"></i> Skills Extracted from Your Resume</h2>
+            <div id="cd-extracted-skills" class="tags-container"></div>
+        </section>
+
+        <!-- Career match cards -->
+        <div id="career-cards-container" class="career-cards-grid fade-in"></div>
+    </main>
+
+    <!-- AI Career Mentor Chatbot Widget -->
+    <div id="chat-widget">
+        <button id="chat-toggle-btn" title="AI Career Mentor">
+            <i class="fas fa-comments"></i>
+            <span>Career Assistant</span>
+        </button>
+        <div id="chat-window" style="display:none;">
+            <div id="chat-header">
+                <div class="chat-header-info">
+                    <div class="chat-avatar"><i class="fas fa-robot"></i></div>
+                    <div>
+                        <div class="chat-title">AI Career Mentor</div>
+                        <div class="chat-subtitle">Powered by Gemini</div>
+                    </div>
+                </div>
+                <button id="chat-close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="chat-messages">
+                <div class="chat-message bot-msg">
+                    <span>👋 Hi! I've analyzed your resume and found your top career matches. Ask me anything about these roles, skill gaps, or how to level up!</span>
+                </div>
+            </div>
+            <div class="chat-input-row">
+                <input type="text" id="chat-input" placeholder="Ask about your career matches..." autocomplete="off" />
+                <button id="chat-send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card template (cloned by JS) -->
+    <template id="career-card-template">
+        <div class="career-card glass-card">
+            <div class="career-card-header">
+                <div class="career-card-rank"></div>
+                <div class="career-card-info">
+                    <h2 class="career-card-title"></h2>
+                    <p class="career-card-reason text-muted"></p>
+                </div>
+                <div class="fit-score-container">
+                    <svg class="fit-ring" width="90" height="90">
+                        <circle class="fit-ring-bg" stroke-width="8" fill="transparent" r="37" cx="45" cy="45"/>
+                        <circle class="fit-ring-fg" stroke-width="8" fill="transparent" r="37" cx="45" cy="45"/>
+                    </svg>
+                    <div class="fit-score-text"><span class="fit-score-val">0</span>%</div>
+                    <div class="fit-score-label">Career Fit</div>
+                </div>
+            </div>
+
+            <div class="career-card-body">
+                <div class="career-skills-block">
+                    <h3><i class="fas fa-exclamation-triangle text-warning"></i> Missing Skills</h3>
+                    <div class="career-gaps tags-container error-tags"></div>
+                </div>
+
+                <div class="career-rec-toggle">
+                    <button class="rec-toggle-btn btn-secondary">
+                        <i class="fas fa-lightbulb"></i> View Recommendations
+                    </button>
+                    <div class="career-recommendations" style="display:none;">
+                        <div class="rec-section">
+                            <h4><i class="fas fa-book-open"></i> Courses</h4>
+                            <ul class="custom-list career-courses"></ul>
+                        </div>
+                        <div class="rec-section">
+                            <h4><i class="fas fa-award"></i> Certifications</h4>
+                            <ul class="custom-list career-certs"></ul>
+                        </div>
+                        <div class="rec-section">
+                            <h4><i class="fas fa-code-branch"></i> Projects</h4>
+                            <ul class="custom-list career-projects"></ul>
+                        </div>
+                        <div class="rec-section">
+                            <h4><i class="fas fa-briefcase"></i> Internships</h4>
+                            <ul class="custom-list career-internships"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="career-time-est text-muted">
+                    <i class="fas fa-clock"></i> Est. time to readiness: <strong class="career-weeks highlight"></strong> weeks
+                </p>
+            </div>
+        </div>
+    </template>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Skill Gap Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" style="padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 10;">
+        <div class="logo font-bold text-gradient" style="font-size: 1.5rem;">Skill Gap Analyzer</div>
+        <div class="nav-links">
+            <a href="/" style="color: var(--text); margin-right: 1.5rem; text-decoration: none;">New Analysis</a>
+            {% if session.user_id %}
+                <a href="/dashboard" style="color: var(--accent); margin-right: 1.5rem; text-decoration: none; font-weight: 600;">Dashboard</a>
+                <a href="/logout" class="btn-primary" style="padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none;">Logout</a>
+            {% else %}
+                <a href="/login" class="btn-primary" style="padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none;">Login</a>
+            {% endif %}
+        </div>
+    </nav>
+
+    <main class="container" style="max-width: 1200px;">
+        <header class="header">
+            <h1 class="gradient-text">Welcome back, {{ session.user_name }}</h1>
+            <p class="subtitle">Your career readiness dashboard</p>
+        </header>
+
+        <!-- Tab Navigation -->
+        <div class="tabs" style="display: flex; gap: 2rem; margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">
+            <button class="tab-btn active" onclick="showTab('overview')" style="background: none; border: none; color: white; cursor: pointer; font-size: 1.1rem; padding: 0.5rem 0; position: relative;">Overview</button>
+            <button class="tab-btn" onclick="showTab('history')" style="background: none; border: none; color: rgba(255,255,255,0.6); cursor: pointer; font-size: 1.1rem; padding: 0.5rem 0; position: relative;">History</button>
+        </div>
+
+        <div id="overview" class="tab-content">
+            <div class="glass-card" style="padding: 2rem; margin-bottom: 2rem;">
+                <h2 style="margin-bottom: 1.5rem;">Career Summary</h2>
+                {% if reports %}
+                    {% set latest = reports[0] %}
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                        <div class="stat-box">
+                            <label class="text-muted">Latest Focus</label>
+                            <div class="highlight font-bold" style="font-size: 1.5rem;">{{ latest.target_role_title }}</div>
+                        </div>
+                        <div class="stat-box">
+                            <label class="text-muted">Readiness Score</label>
+                            <div class="text-accent font-bold" style="font-size: 2rem;">{{ latest.overall_readiness_score }}%</div>
+                        </div>
+                        <div class="stat-box">
+                            <label class="text-muted">Total Reports</label>
+                            <div style="font-size: 1.5rem;">{{ reports|length }}</div>
+                        </div>
+                    </div>
+                {% else %}
+                    <p class="text-muted">Start by analyzing your resume to see your readiness scores.</p>
+                {% endif %}
+            </div>
+            
+            <div style="display: flex; justify-content: center; margin-top: 2rem;">
+                <a href="/" class="btn-primary" style="text-decoration: none; padding: 1rem 2rem; border-radius: 12px; font-weight: 600;">Start New Analysis</a>
+            </div>
+        </div>
+
+        <div id="history" class="tab-content" style="display: none;">
+            <section class="fade-in">
+            {% if reports %}
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+                    {% for report in reports %}
+                    <div class="glass-card card-hover" style="padding: 1.5rem;">
+                        <h3>{{ report.target_role_title }}</h3>
+                        <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">
+                            Generated on: {{ report.generated_at[:10] }}
+                        </p>
+                        
+                        <div class="progress-ring-container" style="margin: 1rem 0;">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span>Readiness Score:</span>
+                                <span class="highlight font-bold">{{ report.overall_readiness_score }}%</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.5rem;">
+                                <span>Est. Time to Ready:</span>
+                                <span class="text-accent font-bold">{{ report.estimated_time_to_ready_weeks }} weeks</span>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 1rem;">
+                            <strong>Top Priorities:</strong>
+                            <div class="tags-container" style="margin-top: 0.5rem;">
+                                {% for gap in report.gap_analysis %}
+                                    {% if gap.priority == 'high' %}
+                                        <span class="tag text-warning" style="border-color: rgba(245, 158, 11, 0.3);">{{ gap.skill_name }}</span>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="glass-card text-center" style="padding: 3rem;">
+                    <i class="fas fa-folder-open text-muted" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                    <h3>No reports found</h3>
+                    <p class="text-muted">You haven't generated any skill gap reports yet.</p>
+                    <a href="/" class="btn-primary mt-4" style="display: inline-block; text-decoration: none; padding: 0.75rem 1.5rem; border-radius: 8px;">Run an Analysis</a>
+                </div>
+            {% endif %}
+            </section>
+        </div>
+
+        <script>
+            function showTab(tabId) {
+                // Hide all content
+                document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+                // Show selected content
+                document.getElementById(tabId).style.display = 'block';
+                
+                // Update button styles
+                document.querySelectorAll('.tab-btn').forEach(btn => {
+                    btn.style.color = 'rgba(255,255,255,0.6)';
+                    btn.style.borderBottom = 'none';
+                });
+                
+                const activeBtn = event.currentTarget;
+                if (activeBtn) {
+                    activeBtn.style.color = 'white';
+                    activeBtn.style.borderBottom = '2px solid var(--accent)';
+                }
+            }
+        </script>
+    </main>
+</body>
+</html>

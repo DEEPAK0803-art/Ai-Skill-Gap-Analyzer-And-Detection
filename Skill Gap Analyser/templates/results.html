@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results - Skill Gap Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" style="padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 10;">
+        <div class="logo font-bold text-gradient" style="font-size: 1.5rem;">Skill Gap Analyzer</div>
+        <div class="nav-links">
+            <a href="/" style="color: var(--text); margin-right: 1.5rem; text-decoration: none;">Home</a>
+            {% if session.user_id %}
+                <a href="/dashboard" style="color: var(--text); margin-right: 1.5rem; text-decoration: none;">Dashboard</a>
+                <a href="/logout" class="btn-primary" style="padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none;">Logout</a>
+            {% else %}
+                <a href="/login" class="btn-primary" style="padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none;">Login</a>
+            {% endif %}
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="header">
+            <h1 class="gradient-text text-center">Your Learning Path</h1>
+            <p class="subtitle text-center">Target Role: <span id="res-target-role" class="highlight"></span></p>
+            <a href="/" class="back-link"><i class="fas fa-arrow-left"></i> Analyze another resume</a>
+        </header>
+
+        <div class="results-grid fade-in">
+            <!-- Left Column: Scores and Gaps -->
+            <div class="results-col-left">
+                <section class="glass-card text-center score-section card-hover">
+                    <h2 class="card-title">Career Readiness Score</h2>
+                    <div class="progress-ring-container">
+                        <svg class="progress-ring" width="160" height="160">
+                            <circle class="progress-ring__circle progress-ring__bg" stroke-width="12" fill="transparent" r="70" cx="80" cy="80"/>
+                            <circle id="score-circle" class="progress-ring__circle progress-ring__fg" stroke-width="12" fill="transparent" r="70" cx="80" cy="80"/>
+                        </svg>
+                        <div class="score-text">
+                            <span id="res-score">0</span>%
+                        </div>
+                    </div>
+                </section>
+
+                <section class="glass-card card-hover">
+                    <h2 class="card-title">Skills Overview</h2>
+                    <div class="skills-block">
+                        <h3><i class="fas fa-check-circle text-success"></i> Extracted Skills</h3>
+                        <div id="res-extracted-skills" class="tags-container"></div>
+                    </div>
+                    <div class="skills-block mt-4">
+                        <h3><i class="fas fa-exclamation-triangle text-warning"></i> Skill Gaps</h3>
+                        <div id="res-skill-gaps" class="tags-container error-tags"></div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column: Recommendations & Roadmap -->
+            <div class="results-col-right">
+                
+                <section class="glass-card card-hover">
+                    <h2 class="card-title"><i class="fas fa-certificate text-primary"></i> Recommendations</h2>
+                    <div class="rec-grid">
+                        <div class="rec-box" style="grid-column: span 2;">
+                            <h3>Recommended Courses</h3>
+                            <ul id="res-courses" class="custom-list"></ul>
+                        </div>
+                        <div class="rec-box" style="grid-column: span 2;">
+                            <h3>Recommended Assessments</h3>
+                            <ul id="res-assessments" class="custom-list"></ul>
+                        </div>
+                        <div class="rec-box" style="grid-column: span 2;">
+                            <h3>Recommended Certifications</h3>
+                            <ul id="res-certifications" class="custom-list"></ul>
+                        </div>
+                        <div class="rec-box" style="grid-column: span 2;">
+                            <h3>Recommended Projects</h3>
+                            <ul id="res-projects" class="custom-list"></ul>
+                        </div>
+                        <div class="rec-box" style="grid-column: span 2;">
+                            <h3>Recommended Internships</h3>
+                            <ul id="res-internships" class="custom-list"></ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="glass-card mt-4 card-hover">
+                    <h2 class="card-title"><i class="fas fa-chart-line text-accent"></i> Detailed Gap Analysis</h2>
+                    <p class="mb-4">Estimated Time to Career Readiness: <span id="res-est-weeks" class="highlight font-bold" style="font-size: 1.2rem;">0</span> weeks</p>
+                    <div class="table-responsive">
+                        <table class="custom-table" id="res-gap-table">
+                            <thead>
+                                <tr>
+                                    <th>Skill</th>
+                                    <th>Priority</th>
+                                    <th>Est. Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- JS populated -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- AI Career Mentor Chatbot Widget -->
+    <div id="chat-widget">
+        <button id="chat-toggle-btn" title="AI Career Mentor">
+            <i class="fas fa-comments"></i>
+            <span>Career Assistant</span>
+        </button>
+        <div id="chat-window" style="display:none;">
+            <div id="chat-header">
+                <div class="chat-header-info">
+                    <div class="chat-avatar"><i class="fas fa-robot"></i></div>
+                    <div>
+                        <div class="chat-title">AI Career Mentor</div>
+                        <div class="chat-subtitle">Powered by Gemini</div>
+                    </div>
+                </div>
+                <button id="chat-close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="chat-messages">
+                <div class="chat-message bot-msg">
+                    <span>👋 Hi! I'm your AI Career Mentor. Ask me anything about your skill gaps, learning path, or career advice!</span>
+                </div>
+            </div>
+            <div class="chat-input-row">
+                <input type="text" id="chat-input" placeholder="Ask me anything..." autocomplete="off" />
+                <button id="chat-send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

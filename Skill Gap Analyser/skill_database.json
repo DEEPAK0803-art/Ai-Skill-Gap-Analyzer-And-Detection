@@ -1,0 +1,150 @@
+{
+    "Web Developer": {
+        "required_skills": [
+            "HTML", "CSS", "JavaScript", "React", "Node.js", "Git", "REST API", "Database", "Tailwind CSS", "TypeScript"
+        ],
+        "certifications": [
+            "Meta Front-End Developer Professional Certificate",
+            "IBM Full Stack Software Developer Professional Certificate",
+            "AWS Certified Developer"
+        ],
+        "projects": [
+            "Full Stack E-Commerce Application",
+            "Interactive Portfolio Website",
+            "Real-time Chat App using WebSockets"
+        ],
+        "internships": [
+            "Frontend Developer Intern",
+            "Backend Developer Intern",
+            "Full Stack Web Developer Intern"
+        ],
+        "roadmap": [
+            "Month 1: Master HTML, CSS, JavaScript fundamentals and version control (Git).",
+            "Month 2: Learn a frontend framework like React, state management, and API integration.",
+            "Month 3: Learn backend basics (Node.js/Express) and build a full-stack project."
+        ]
+    },
+    "Data Scientist": {
+        "required_skills": [
+            "Python", "Machine Learning", "Statistics", "SQL", "Deep Learning", "Data Visualization", "Pandas", "NumPy"
+        ],
+        "certifications": [
+            "IBM Data Science Professional Certificate",
+            "Google Data Analytics Professional Certificate",
+            "Microsoft Certified: Data Analyst Associate"
+        ],
+        "projects": [
+            "Stock Price Prediction Model",
+            "Customer Segmentation Analysis",
+            "Interactive Data Dashboard using Dash/Streamlit"
+        ],
+        "internships": [
+            "Data Science Intern",
+            "Data Analyst Intern",
+            "Business Intelligence Intern"
+        ],
+        "roadmap": [
+            "Month 1: Master Python basics, Pandas, NumPy, and SQL.",
+            "Month 2: Learn Statistics and Machine Learning algorithms (Scikit-Learn).",
+            "Month 3: Explore Data Visualization tools, and build a predictive ML model portfolio project."
+        ]
+    },
+    "AI Engineer": {
+        "required_skills": [
+            "Python", "Machine Learning", "Deep Learning", "TensorFlow", "PyTorch", "Computer Vision", "NLP", "Neural Networks"
+        ],
+        "certifications": [
+            "DeepLearning.AI TensorFlow Developer",
+            "AWS Certified Machine Learning",
+            "IBM AI Engineering Professional Certificate"
+        ],
+        "projects": [
+            "Image Classification with CNNs",
+            "Sentiment Analysis using NLP",
+            "Chatbot using Large Language Models"
+        ],
+        "internships": [
+            "AI/Machine Learning Intern",
+            "NLP Research Intern",
+            "Computer Vision Intern"
+        ],
+        "roadmap": [
+            "Month 1: Solidify Python, Mathematics for AI, and advanced Machine Learning concepts.",
+            "Month 2: Dive into Deep Learning frameworks (TensorFlow/PyTorch) and Neural Networks.",
+            "Month 3: Build an end-to-end AI application and deploy it using cloud services."
+        ]
+    },
+    "Android Developer": {
+        "required_skills": [
+            "Java", "Kotlin", "Android Studio", "APIs", "Firebase", "Git", "UI/UX", "SQLite"
+        ],
+        "certifications": [
+            "Google Associate Android Developer",
+            "Meta Android Developer Professional Certificate"
+        ],
+        "projects": [
+            "Weather Forecast App",
+            "Expense Tracker App with Firebase",
+            "To-Do List Clone with local storage"
+        ],
+        "internships": [
+            "Android Developer Intern",
+            "Mobile App Development Intern"
+        ],
+        "roadmap": [
+            "Month 1: Learn Kotlin fundamentals and Android Studio basics.",
+            "Month 2: Understand Android architecture (MVVM), UI design, and API integration.",
+            "Month 3: Implement database storage (Room/Firebase) and publish an app to the Play Store."
+        ]
+    },
+    "Cybersecurity Analyst": {
+        "required_skills": [
+            "Networking", "Linux", "Ethical Hacking", "Cryptography", "Security Tools", "Python", "Penetration Testing", "Wireshark"
+        ],
+        "certifications": [
+            "CompTIA Security+",
+            "Certified Ethical Hacker (CEH)",
+            "Google Cybersecurity Professional Certificate"
+        ],
+        "projects": [
+            "Network Vulnerability Scanner",
+            "Custom Keylogger (Educational)",
+            "Phishing Detection using Machine Learning"
+        ],
+        "internships": [
+            "Cybersecurity Analyst Intern",
+            "Information Security Intern",
+            "Penetration Testing Intern"
+        ],
+        "roadmap": [
+            "Month 1: Learn Computer Networking basics, Linux Administration, and Scripting (Python).",
+            "Month 2: Study Cryptography, Security Protocols, and Hands-on with Security Tools (Wireshark, Nmap).",
+            "Month 3: Practice Penetration Testing in isolated environments and prepare for a fundamental certification like Security+."
+        ]
+    },
+    "Cloud Engineer": {
+        "required_skills": [
+            "AWS", "Azure", "Linux", "Docker", "Kubernetes", "CI/CD", "Networking", "Python"
+        ],
+        "certifications": [
+            "AWS Certified Solutions Architect",
+            "Microsoft Certified: Azure Fundamentals",
+            "Google Cloud Associate Cloud Engineer"
+        ],
+        "projects": [
+            "Deploy a Web Application on AWS/Azure",
+            "Build a Serverless API",
+            "Set up a CI/CD Pipeline with Jenkins/GitHub Actions"
+        ],
+        "internships": [
+            "Cloud Computing Intern",
+            "DevOps Intern",
+            "Infrastructure Intern"
+        ],
+        "roadmap": [
+            "Month 1: Master Linux fundamentals, Version Control, and Cloud Basics (AWS/Azure).",
+            "Month 2: Learn Containerization (Docker) and basic Infrastructure as Code (Terraform).",
+            "Month 3: Implement CI/CD pipelines, explore Kubernetes, and deploy a secure scalable app."
+        ]
+    }
+}

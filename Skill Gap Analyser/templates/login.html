@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Skill Gap Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" style="padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 10;">
+        <div class="logo font-bold text-gradient" style="font-size: 1.5rem;">Skill Gap Analyzer</div>
+        <div class="nav-links">
+            <a href="/" style="color: var(--text); margin-right: 1.5rem; text-decoration: none;">Home</a>
+            {% if session.user_id %}
+                <a href="/dashboard" style="color: var(--text); margin-right: 1.5rem; text-decoration: none;">Dashboard</a>
+                <a href="/logout" class="btn-primary" style="padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none;">Logout</a>
+            {% else %}
+                <a href="/login" class="btn-primary" style="padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none;">Login</a>
+            {% endif %}
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="header text-center">
+            <h1 class="gradient-text">Sign In</h1>
+            <p class="subtitle">Access your personalized learning roadmap</p>
+        </header>
+
+        <section class="upload-section glass-panel fade-in" style="max-width: 400px; margin: 0 auto;">
+            {% if error %}
+                <div class="alert alert-danger" style="color: #ff4d4d; margin-bottom: 1rem; text-align: center;">
+                    <i class="fas fa-exclamation-circle"></i> {{ error }}
+                </div>
+            {% endif %}
+            <form method="POST" action="/login">
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" name="email" class="custom-select" placeholder="Enter your email" required style="padding: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white; width: 100%;">
+                </div>
+                <div class="form-group" style="margin-top: 1rem;">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" name="password" class="custom-select" placeholder="Enter your password" required style="padding: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white; width: 100%;">
+                </div>
+                <div class="form-actions text-center mt-4">
+                    <button type="submit" class="btn-primary" style="width: 100%;"><span class="btn-text">Sign In</span></button>
+                </div>
+                <div class="text-center mt-3" style="font-size: 0.9rem; color: var(--text-muted);">
+                    Don't have an account? <a href="/register" style="color: var(--accent); text-decoration: none;">Register here</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

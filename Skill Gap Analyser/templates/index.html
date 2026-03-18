@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Skill Gap Analyzer</title>
+    <meta name="description" content="AI-Driven Skill Gap Analyzer — upload your resume and get personalized career readiness insights.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" style="padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 10;">
+        <div class="logo font-bold text-gradient" style="font-size: 1.5rem;">Skill Gap Analyzer</div>
+        <div class="nav-links">
+            <a href="/" style="color: var(--accent); margin-right: 1.5rem; text-decoration: none; font-weight: 600;">Home</a>
+            {% if session.user_id %}
+                <a href="/dashboard" style="color: var(--text); margin-right: 1.5rem; text-decoration: none;">Dashboard</a>
+                <a href="/logout" class="btn-primary" style="padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none;">Logout</a>
+            {% else %}
+                <a href="/login" class="btn-primary" style="padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none;">Login</a>
+            {% endif %}
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="header text-center">
+            <h1 class="gradient-text">Skill Gap Analyzer</h1>
+            <p class="subtitle">AI-Driven Personalized Learning &amp; Career Readiness</p>
+        </header>
+
+        <section class="upload-section glass-panel fade-in">
+            <!-- Mode Toggle -->
+            <div class="mode-toggle-wrapper">
+                <p class="form-label" style="margin-bottom: 0.8rem;">Choose Analysis Mode</p>
+                <div class="mode-toggle" id="mode-toggle">
+                    <button type="button" class="mode-btn active" id="btn-gap" data-mode="gap">
+                        <i class="fas fa-search"></i> Skill Gap Analysis
+                    </button>
+                    <button type="button" class="mode-btn" id="btn-detect" data-mode="detect">
+                        <i class="fas fa-magic"></i> Career Detection
+                    </button>
+                </div>
+                <p class="mode-description" id="mode-desc">
+                    Select your target career role and upload your resume to identify skill gaps.
+                </p>
+            </div>
+
+            <form id="analyze-form" enctype="multipart/form-data">
+                <!-- Role Selector (hidden in Career Detection mode) -->
+                <div class="form-group" id="role-group">
+                    <label for="role-select" class="form-label">Target Career Role</label>
+                    <div class="custom-select-wrapper">
+                        <select id="role-select" name="role" class="custom-select">
+                            <option value="" disabled selected>Select your target role</option>
+                            {% for role in roles %}
+                                <option value="{{ role.id }}">{{ role.title }}</option>
+                            {% endfor %}
+                        </select>
+                        <i class="fas fa-chevron-down select-icon"></i>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Upload Resume (PDF or DOCX)</label>
+                    <div class="drop-zone" id="drop-zone">
+                        <input type="file" id="resume-upload" name="resume" accept=".pdf,.docx" hidden required>
+                        <div class="drop-zone-content">
+                            <i class="fas fa-cloud-upload-alt drop-icon"></i>
+                            <span class="drop-text">Drag &amp; Drop your resume here</span>
+                            <span class="drop-subtext">or click to browse files</span>
+                            <div class="file-display" id="file-display" style="display: none;">
+                                <i class="fas fa-file-alt file-icon"></i>
+                                <span id="file-name" class="file-name-text"></span>
+                                <button type="button" id="remove-file" class="remove-btn"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions text-center">
+                    <button type="submit" class="btn-primary" id="analyze-btn">
+                        <span class="btn-text" id="btn-label">Analyze Skills</span>
+                        <div class="spinner" id="btn-spinner" style="display: none;"></div>
+                    </button>
+                </div>
+                
+                <div id="error-message" class="error-alert" style="display: none;"></div>
+            </form>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

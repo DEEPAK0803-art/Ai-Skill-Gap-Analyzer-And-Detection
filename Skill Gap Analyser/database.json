@@ -1,0 +1,2647 @@
+{
+    "skills": [
+        {
+            "id": "sk001",
+            "name": "Python Programming",
+            "category": "technical",
+            "description": "Core Python language: syntax, OOP, libraries",
+            "related_skills": [
+                "sk002",
+                "sk003"
+            ],
+            "difficulty_levels": {
+                "beginner": "0\u00e2\u20ac\u201c30",
+                "intermediate": "31\u00e2\u20ac\u201c70",
+                "advanced": "71\u00e2\u20ac\u201c100"
+            }
+        },
+        {
+            "id": "sk002",
+            "name": "Data Analysis",
+            "category": "technical",
+            "description": "Analyzing datasets using pandas, numpy, etc.",
+            "related_skills": [
+                "sk001",
+                "sk004"
+            ],
+            "difficulty_levels": {
+                "beginner": "0\u00e2\u20ac\u201c30",
+                "intermediate": "31\u00e2\u20ac\u201c70",
+                "advanced": "71\u00e2\u20ac\u201c100"
+            }
+        },
+        {
+            "id": "sk003",
+            "name": "Machine Learning",
+            "category": "technical",
+            "description": "Supervised/unsupervised ML models, scikit-learn",
+            "related_skills": [
+                "sk001",
+                "sk002"
+            ],
+            "difficulty_levels": {
+                "beginner": "0\u00e2\u20ac\u201c30",
+                "intermediate": "31\u00e2\u20ac\u201c70",
+                "advanced": "71\u00e2\u20ac\u201c100"
+            }
+        },
+        {
+            "id": "sk004",
+            "name": "Data Visualization",
+            "category": "technical",
+            "description": "Creating charts and dashboards with Matplotlib, Tableau",
+            "related_skills": [
+                "sk002"
+            ],
+            "difficulty_levels": {
+                "beginner": "0\u00e2\u20ac\u201c30",
+                "intermediate": "31\u00e2\u20ac\u201c70",
+                "advanced": "71\u00e2\u20ac\u201c100"
+            }
+        },
+        {
+            "id": "sk005",
+            "name": "SQL & Databases",
+            "category": "technical",
+            "description": "Relational database design and querying",
+            "related_skills": [
+                "sk002"
+            ],
+            "difficulty_levels": {
+                "beginner": "0\u00e2\u20ac\u201c30",
+                "intermediate": "31\u00e2\u20ac\u201c70",
+                "advanced": "71\u00e2\u20ac\u201c100"
+            }
+        },
+        {
+            "id": "sk006",
+            "name": "Web Development (React)",
+            "category": "technical",
+            "description": "Frontend development using React.js",
+            "related_skills": [
+                "sk007",
+                "sk008"
+            ],
+            "difficulty_levels": {
+                "beginner": "0\u00e2\u20ac\u201c30",
+                "intermediate": "31\u00e2\u20ac\u201c70",
+                "advanced": "71\u00e2\u20ac\u201c100"
+            }
+        },
+        {
+            "id": "sk007",
+            "name": "JavaScript",
+            "category": "technical",
+            "description": "Core JS, ES6+, DOM manipulation",
+            "related_skills": [
+                "sk006"
+            ],
+            "difficulty_levels": {
+                "beginner": "0\u00e2\u20ac\u201c30",
+                "intermediate": "31\u00e2\u20ac\u201c70",
+                "advanced": "71\u00e2\u20ac\u201c100"
+            }
+        },
+        {
+            "id": "sk008",
+            "name": "Node.js & Backend",
+            "category": "technical",
+            "description": "Server-side development with Node and Express",
+            "related_skills": [
+                "sk007"
+            ],
+            "difficulty_levels": {
+                "beginner": "0\u00e2\u20ac\u201c30",
+                "intermediate": "31\u00e2\u20ac\u201c70",
+                "advanced": "71\u00e2\u20ac\u201c100"
+            }
+        },
+        {
+            "id": "sk009",
+            "name": "Cloud Computing (AWS)",
+            "category": "tool",
+            "description": "AWS core services: EC2, S3, Lambda, RDS",
+            "related_skills": [
+                "sk010"
+            ],
+            "difficulty_levels": {
+                "beginner": "0\u00e2\u20ac\u201c30",
+                "intermediate": "31\u00e2\u20ac\u201c70",
+                "advanced": "71\u00e2\u20ac\u201c100"
+            }
+        },
+        {
+            "id": "sk010",
+            "name": "DevOps & CI/CD",
+            "category": "technical",
+            "description": "Docker, GitHub Actions, deployment pipelines",
+            "related_skills": [
+                "sk009"
+            ],
+            "difficulty_levels": {
+                "beginner": "0\u00e2\u20ac\u201c30",
+                "intermediate": "31\u00e2\u20ac\u201c70",
+                "advanced": "71\u00e2\u20ac\u201c100"
+            }
+        },
+        {
+            "id": "sk011",
+            "name": "Communication Skills",
+            "category": "soft",
+            "description": "Written and verbal professional communication",
+            "related_skills": [
+                "sk012"
+            ],
+            "difficulty_levels": {
+                "beginner": "0\u00e2\u20ac\u201c30",
+                "intermediate": "31\u00e2\u20ac\u201c70",
+                "advanced": "71\u00e2\u20ac\u201c100"
+            }
+        },
+        {
+            "id": "sk012",
+            "name": "Problem Solving",
+            "category": "soft",
+            "description": "Logical thinking, debugging, critical analysis",
+            "related_skills": [
+                "sk011"
+            ],
+            "difficulty_levels": {
+                "beginner": "0\u00e2\u20ac\u201c30",
+                "intermediate": "31\u00e2\u20ac\u201c70",
+                "advanced": "71\u00e2\u20ac\u201c100"
+            }
+        },
+        {
+            "id": "sk013",
+            "name": "Statistics & Probability",
+            "category": "domain",
+            "description": "Descriptive/inferential statistics, distributions",
+            "related_skills": [
+                "sk002",
+                "sk003"
+            ],
+            "difficulty_levels": {
+                "beginner": "0\u00e2\u20ac\u201c30",
+                "intermediate": "31\u00e2\u20ac\u201c70",
+                "advanced": "71\u00e2\u20ac\u201c100"
+            }
+        },
+        {
+            "id": "sk014",
+            "name": "Cybersecurity Basics",
+            "category": "domain",
+            "description": "Network security, encryption, ethical hacking basics",
+            "related_skills": [
+                "sk005"
+            ],
+            "difficulty_levels": {
+                "beginner": "0\u00e2\u20ac\u201c30",
+                "intermediate": "31\u00e2\u20ac\u201c70",
+                "advanced": "71\u00e2\u20ac\u201c100"
+            }
+        },
+        {
+            "id": "sk015",
+            "name": "UI/UX Design",
+            "category": "domain",
+            "description": "User research, wireframing, Figma",
+            "related_skills": [
+                "sk006"
+            ],
+            "difficulty_levels": {
+                "beginner": "0\u00e2\u20ac\u201c30",
+                "intermediate": "31\u00e2\u20ac\u201c70",
+                "advanced": "71\u00e2\u20ac\u201c100"
+            }
+        },
+        {
+            "id": "sk016",
+            "name": "Python",
+            "category": "technical",
+            "description": "Proficiency in Python",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk017",
+            "name": "Statistics",
+            "category": "technical",
+            "description": "Proficiency in Statistics",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk018",
+            "name": "SQL",
+            "category": "technical",
+            "description": "Proficiency in SQL",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk019",
+            "name": "Pandas",
+            "category": "technical",
+            "description": "Proficiency in Pandas",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk020",
+            "name": "NumPy",
+            "category": "technical",
+            "description": "Proficiency in NumPy",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk021",
+            "name": "Deep Learning",
+            "category": "technical",
+            "description": "Proficiency in Deep Learning",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk022",
+            "name": "TensorFlow",
+            "category": "technical",
+            "description": "Proficiency in TensorFlow",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk023",
+            "name": "PyTorch",
+            "category": "technical",
+            "description": "Proficiency in PyTorch",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk024",
+            "name": "Model Deployment",
+            "category": "technical",
+            "description": "Proficiency in Model Deployment",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk025",
+            "name": "Data Engineering",
+            "category": "technical",
+            "description": "Proficiency in Data Engineering",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk026",
+            "name": "Scikit-learn",
+            "category": "technical",
+            "description": "Proficiency in Scikit-learn",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk027",
+            "name": "Git",
+            "category": "technical",
+            "description": "Proficiency in Git",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk028",
+            "name": "Excel",
+            "category": "technical",
+            "description": "Proficiency in Excel",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk029",
+            "name": "Power BI",
+            "category": "technical",
+            "description": "Proficiency in Power BI",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk030",
+            "name": "Tableau",
+            "category": "technical",
+            "description": "Proficiency in Tableau",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk031",
+            "name": "Data Cleaning",
+            "category": "technical",
+            "description": "Proficiency in Data Cleaning",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk032",
+            "name": "HTML",
+            "category": "technical",
+            "description": "Proficiency in HTML",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk033",
+            "name": "CSS",
+            "category": "technical",
+            "description": "Proficiency in CSS",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk034",
+            "name": "React",
+            "category": "technical",
+            "description": "Proficiency in React",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk035",
+            "name": "Node.js",
+            "category": "technical",
+            "description": "Proficiency in Node.js",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk036",
+            "name": "Express.js",
+            "category": "technical",
+            "description": "Proficiency in Express.js",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk037",
+            "name": "MongoDB",
+            "category": "technical",
+            "description": "Proficiency in MongoDB",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk038",
+            "name": "REST API",
+            "category": "technical",
+            "description": "Proficiency in REST API",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk039",
+            "name": "Java",
+            "category": "technical",
+            "description": "Proficiency in Java",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk040",
+            "name": "REST APIs",
+            "category": "technical",
+            "description": "Proficiency in REST APIs",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk041",
+            "name": "Databases",
+            "category": "technical",
+            "description": "Proficiency in Databases",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk042",
+            "name": "Authentication",
+            "category": "technical",
+            "description": "Proficiency in Authentication",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk043",
+            "name": "Microservices",
+            "category": "technical",
+            "description": "Proficiency in Microservices",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk044",
+            "name": "Responsive Design",
+            "category": "technical",
+            "description": "Proficiency in Responsive Design",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk045",
+            "name": "UI Frameworks",
+            "category": "technical",
+            "description": "Proficiency in UI Frameworks",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk046",
+            "name": "Data Structures",
+            "category": "technical",
+            "description": "Proficiency in Data Structures",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk047",
+            "name": "Algorithms",
+            "category": "technical",
+            "description": "Proficiency in Algorithms",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk048",
+            "name": "C++",
+            "category": "technical",
+            "description": "Proficiency in C++",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk049",
+            "name": "Object Oriented Programming",
+            "category": "technical",
+            "description": "Proficiency in Object Oriented Programming",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk050",
+            "name": "System Design",
+            "category": "technical",
+            "description": "Proficiency in System Design",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk051",
+            "name": "AWS",
+            "category": "technical",
+            "description": "Proficiency in AWS",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk052",
+            "name": "Azure",
+            "category": "technical",
+            "description": "Proficiency in Azure",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk053",
+            "name": "Google Cloud",
+            "category": "technical",
+            "description": "Proficiency in Google Cloud",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk054",
+            "name": "Cloud Architecture",
+            "category": "technical",
+            "description": "Proficiency in Cloud Architecture",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk055",
+            "name": "Networking",
+            "category": "technical",
+            "description": "Proficiency in Networking",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk056",
+            "name": "Docker",
+            "category": "technical",
+            "description": "Proficiency in Docker",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk057",
+            "name": "Kubernetes",
+            "category": "technical",
+            "description": "Proficiency in Kubernetes",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk058",
+            "name": "Infrastructure as Code",
+            "category": "technical",
+            "description": "Proficiency in Infrastructure as Code",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk059",
+            "name": "Security",
+            "category": "technical",
+            "description": "Proficiency in Security",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk060",
+            "name": "Linux",
+            "category": "technical",
+            "description": "Proficiency in Linux",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk061",
+            "name": "CI/CD",
+            "category": "technical",
+            "description": "Proficiency in CI/CD",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk062",
+            "name": "Jenkins",
+            "category": "technical",
+            "description": "Proficiency in Jenkins",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk063",
+            "name": "GitHub Actions",
+            "category": "technical",
+            "description": "Proficiency in GitHub Actions",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk064",
+            "name": "Cloud Platforms",
+            "category": "technical",
+            "description": "Proficiency in Cloud Platforms",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk065",
+            "name": "Infrastructure Automation",
+            "category": "technical",
+            "description": "Proficiency in Infrastructure Automation",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk066",
+            "name": "Security Tools",
+            "category": "technical",
+            "description": "Proficiency in Security Tools",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk067",
+            "name": "Penetration Testing",
+            "category": "technical",
+            "description": "Proficiency in Penetration Testing",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk068",
+            "name": "Cryptography",
+            "category": "technical",
+            "description": "Proficiency in Cryptography",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk069",
+            "name": "Risk Assessment",
+            "category": "technical",
+            "description": "Proficiency in Risk Assessment",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk070",
+            "name": "Incident Response",
+            "category": "technical",
+            "description": "Proficiency in Incident Response",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk071",
+            "name": "Vulnerability Assessment",
+            "category": "technical",
+            "description": "Proficiency in Vulnerability Assessment",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk072",
+            "name": "Burp Suite",
+            "category": "technical",
+            "description": "Proficiency in Burp Suite",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk073",
+            "name": "Metasploit",
+            "category": "technical",
+            "description": "Proficiency in Metasploit",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk074",
+            "name": "Cybersecurity Fundamentals",
+            "category": "technical",
+            "description": "Proficiency in Cybersecurity Fundamentals",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk075",
+            "name": "UI Design",
+            "category": "technical",
+            "description": "Proficiency in UI Design",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk076",
+            "name": "UX Research",
+            "category": "technical",
+            "description": "Proficiency in UX Research",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk077",
+            "name": "Wireframing",
+            "category": "technical",
+            "description": "Proficiency in Wireframing",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk078",
+            "name": "Figma",
+            "category": "technical",
+            "description": "Proficiency in Figma",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk079",
+            "name": "Adobe XD",
+            "category": "technical",
+            "description": "Proficiency in Adobe XD",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk080",
+            "name": "Prototyping",
+            "category": "technical",
+            "description": "Proficiency in Prototyping",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk081",
+            "name": "User Testing",
+            "category": "technical",
+            "description": "Proficiency in User Testing",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        },
+        {
+            "id": "sk082",
+            "name": "Design Systems",
+            "category": "technical",
+            "description": "Proficiency in Design Systems",
+            "related_skills": [],
+            "difficulty_levels": {
+                "beginner": "0-30",
+                "intermediate": "31-70",
+                "advanced": "71-100"
+            }
+        }
+    ],
+    "job_roles": [
+        {
+            "id": "jr001",
+            "title": "Data Scientist",
+            "industry": "Technology",
+            "description": "Professional role specializing in Data Scientist.",
+            "required_skills": [
+                {
+                    "skill_id": "sk016",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk003",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk017",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk018",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk019",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk020",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk004",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk021",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk022",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk023",
+                    "min_level": 70,
+                    "weight": 1.0
+                }
+            ],
+            "avg_salary_inr": 1000000,
+            "growth_rate": "20% by 2030",
+            "trending": true,
+            "certifications": [
+                "IBM Data Science Professional Certificate",
+                "Google Data Analytics Certificate"
+            ],
+            "projects": [
+                "House Price Prediction Model",
+                "Customer Segmentation using K-Means"
+            ],
+            "internships": [
+                "Data Science Intern at TechCorp",
+                "Machine Learning Intern at AI Startup"
+            ]
+        },
+        {
+            "id": "jr002",
+            "title": "Machine Learning Engineer",
+            "industry": "Technology",
+            "description": "Professional role specializing in Machine Learning Engineer.",
+            "required_skills": [
+                {
+                    "skill_id": "sk016",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk003",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk021",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk022",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk023",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk024",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk025",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk026",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk027",
+                    "min_level": 70,
+                    "weight": 1.0
+                }
+            ],
+            "avg_salary_inr": 1000000,
+            "growth_rate": "20% by 2030",
+            "trending": true,
+            "certifications": [
+                "AWS Certified Machine Learning",
+                "DeepLearning.AI TensorFlow Developer"
+            ],
+            "projects": [
+                "Deploy an Image Classifier on AWS",
+                "Real-time Fraud Detection Pipeline"
+            ],
+            "internships": [
+                "ML Engineering Intern",
+                "AI Engineer Intern"
+            ]
+        },
+        {
+            "id": "jr003",
+            "title": "Data Analyst",
+            "industry": "Technology",
+            "description": "Professional role specializing in Data Analyst.",
+            "required_skills": [
+                {
+                    "skill_id": "sk018",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk028",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk016",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk004",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk029",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk030",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk017",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk031",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk019",
+                    "min_level": 70,
+                    "weight": 1.0
+                }
+            ],
+            "avg_salary_inr": 1000000,
+            "growth_rate": "20% by 2030",
+            "trending": true,
+            "certifications": [
+                "Google Data Analytics Professional",
+                "Microsoft Certified: Power BI Data Analyst"
+            ],
+            "projects": [
+                "Sales Dashboard in Power BI",
+                "A/B Testing Analysis"
+            ],
+            "internships": [
+                "Data Analyst Intern",
+                "Business Intelligence Intern"
+            ]
+        },
+        {
+            "id": "jr004",
+            "title": "Full Stack Developer",
+            "industry": "Technology",
+            "description": "Professional role specializing in Full Stack Developer.",
+            "required_skills": [
+                {
+                    "skill_id": "sk032",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk033",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk007",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk034",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk035",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk036",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk037",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk027",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk038",
+                    "min_level": 70,
+                    "weight": 1.0
+                }
+            ],
+            "avg_salary_inr": 1000000,
+            "growth_rate": "20% by 2030",
+            "trending": true,
+            "certifications": [
+                "Meta Front-End Developer",
+                "IBM Full Stack Software Developer"
+            ],
+            "projects": [
+                "E-commerce MERN App",
+                "Task Management REST API"
+            ],
+            "internships": [
+                "Full Stack Web Developer Intern",
+                "Software Developer Intern"
+            ]
+        },
+        {
+            "id": "jr005",
+            "title": "Backend Developer",
+            "industry": "Technology",
+            "description": "Professional role specializing in Backend Developer.",
+            "required_skills": [
+                {
+                    "skill_id": "sk016",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk039",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk035",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk040",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk041",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk018",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk042",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk043",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk027",
+                    "min_level": 70,
+                    "weight": 1.0
+                }
+            ],
+            "avg_salary_inr": 1000000,
+            "growth_rate": "20% by 2030",
+            "trending": true,
+            "certifications": [
+                "AWS Certified Developer",
+                "Node.js Application Developer"
+            ],
+            "projects": [
+                "Microservices URL Shortener",
+                "JWT Authentication Service"
+            ],
+            "internships": [
+                "Backend Engineer Intern",
+                "API Developer Intern"
+            ]
+        },
+        {
+            "id": "jr006",
+            "title": "Frontend Developer",
+            "industry": "Technology",
+            "description": "Professional role specializing in Frontend Developer.",
+            "required_skills": [
+                {
+                    "skill_id": "sk032",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk033",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk007",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk034",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk044",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk045",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk027",
+                    "min_level": 70,
+                    "weight": 1.0
+                }
+            ],
+            "avg_salary_inr": 1000000,
+            "growth_rate": "20% by 2030",
+            "trending": true,
+            "certifications": [
+                "Meta Front-End Developer",
+                "FreeCodeCamp Responsive Web Design"
+            ],
+            "projects": [
+                "React Portfolio Website",
+                "Weather App with API Integration"
+            ],
+            "internships": [
+                "Frontend Developer Intern",
+                "UI Developer Intern"
+            ]
+        },
+        {
+            "id": "jr007",
+            "title": "Software Engineer",
+            "industry": "Technology",
+            "description": "Professional role specializing in Software Engineer.",
+            "required_skills": [
+                {
+                    "skill_id": "sk046",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk047",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk039",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk016",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk048",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk049",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk027",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk050",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk041",
+                    "min_level": 70,
+                    "weight": 1.0
+                }
+            ],
+            "avg_salary_inr": 1000000,
+            "growth_rate": "20% by 2030",
+            "trending": true,
+            "certifications": [
+                "Google IT Automation with Python",
+                "Oracle Certified Professional Java SE"
+            ],
+            "projects": [
+                "Inventory Management System",
+                "Custom CLI tool in C++"
+            ],
+            "internships": [
+                "Software Engineering Intern",
+                "SDE Intern"
+            ]
+        },
+        {
+            "id": "jr008",
+            "title": "Cloud Solutions Architect",
+            "industry": "Technology",
+            "description": "Professional role specializing in Cloud Solutions Architect.",
+            "required_skills": [
+                {
+                    "skill_id": "sk051",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk052",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk053",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk054",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk055",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk056",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk057",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk058",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk059",
+                    "min_level": 70,
+                    "weight": 1.0
+                }
+            ],
+            "avg_salary_inr": 1000000,
+            "growth_rate": "20% by 2030",
+            "trending": true,
+            "certifications": [
+                "AWS Certified Solutions Architect",
+                "Microsoft Certified: Azure Solutions Architect"
+            ],
+            "projects": [
+                "Serverless Web Application",
+                "Automated Infrastructure with Terraform"
+            ],
+            "internships": [
+                "Cloud Architect Intern",
+                "Cloud Engineering Intern"
+            ]
+        },
+        {
+            "id": "jr009",
+            "title": "DevOps Engineer",
+            "industry": "Technology",
+            "description": "Professional role specializing in DevOps Engineer.",
+            "required_skills": [
+                {
+                    "skill_id": "sk060",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk056",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk057",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk061",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk062",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk063",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk064",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk065",
+                    "min_level": 70,
+                    "weight": 1.0
+                }
+            ],
+            "avg_salary_inr": 1000000,
+            "growth_rate": "20% by 2030",
+            "trending": true,
+            "certifications": [
+                "Certified Kubernetes Administrator",
+                "AWS Certified DevOps Engineer"
+            ],
+            "projects": [
+                "CI/CD Pipeline with Jenkins & Docker",
+                "Automated Server Provisioning"
+            ],
+            "internships": [
+                "DevOps Intern",
+                "Site Reliability Engineer Intern"
+            ]
+        },
+        {
+            "id": "jr010",
+            "title": "Cybersecurity Analyst",
+            "industry": "Technology",
+            "description": "Professional role specializing in Cybersecurity Analyst.",
+            "required_skills": [
+                {
+                    "skill_id": "sk055",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk060",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk066",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk067",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk068",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk069",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk070",
+                    "min_level": 70,
+                    "weight": 1.0
+                }
+            ],
+            "avg_salary_inr": 1000000,
+            "growth_rate": "20% by 2030",
+            "trending": true,
+            "certifications": [
+                "CompTIA Security+",
+                "Certified Ethical Hacker (CEH)"
+            ],
+            "projects": [
+                "Network Traffic Analyzer",
+                "Simulated Vulnerability Scan"
+            ],
+            "internships": [
+                "Cybersecurity Intern",
+                "Information Security Intern"
+            ]
+        },
+        {
+            "id": "jr011",
+            "title": "Ethical Hacker",
+            "industry": "Technology",
+            "description": "Professional role specializing in Ethical Hacker.",
+            "required_skills": [
+                {
+                    "skill_id": "sk055",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk060",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk067",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk071",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk072",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk073",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk016",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk074",
+                    "min_level": 70,
+                    "weight": 1.0
+                }
+            ],
+            "avg_salary_inr": 1000000,
+            "growth_rate": "20% by 2030",
+            "trending": true,
+            "certifications": [
+                "Offensive Security Certified Professional (OSCP)",
+                "CompTIA PenTest+"
+            ],
+            "projects": [
+                "Web App Penetration Test Report",
+                "Custom Buffer Overflow Exploit"
+            ],
+            "internships": [
+                "Penetration Testing Intern",
+                "Security Researcher Intern"
+            ]
+        },
+        {
+            "id": "jr012",
+            "title": "UI/UX Designer",
+            "industry": "Technology",
+            "description": "Professional role specializing in UI/UX Designer.",
+            "required_skills": [
+                {
+                    "skill_id": "sk075",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk076",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk077",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk078",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk079",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk080",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk081",
+                    "min_level": 70,
+                    "weight": 1.0
+                },
+                {
+                    "skill_id": "sk082",
+                    "min_level": 70,
+                    "weight": 1.0
+                }
+            ],
+            "avg_salary_inr": 1000000,
+            "growth_rate": "20% by 2030",
+            "trending": true,
+            "certifications": [
+                "Google UX Design Professional Certificate",
+                "CalArts UI/UX Design Specialization"
+            ],
+            "projects": [
+                "Mobile App Wireframes & Prototype",
+                "Website Redesign & User Testing"
+            ],
+            "internships": [
+                "UI/UX Design Intern",
+                "Product Design Intern"
+            ]
+        }
+    ],
+    "assessments": [
+        {
+            "id": "as001",
+            "title": "Python Fundamentals Quiz",
+            "skill_id": "sk001",
+            "type": "mcq",
+            "difficulty": "beginner",
+            "duration_minutes": 20,
+            "passing_score": 60,
+            "created_by": "usr003",
+            "questions": [
+                {
+                    "id": "q1",
+                    "question": "Which keyword is used to define a function in Python?",
+                    "options": [
+                        "func",
+                        "def",
+                        "function",
+                        "define"
+                    ],
+                    "correct_answer": "def",
+                    "explanation": "'def' is the keyword used to define a function in Python.",
+                    "points": 10
+                },
+                {
+                    "id": "q2",
+                    "question": "What is the output of print(type([]))?",
+                    "options": [
+                        "<class 'tuple'>",
+                        "<class 'dict'>",
+                        "<class 'list'>",
+                        "<class 'set'>"
+                    ],
+                    "correct_answer": "<class 'list'>",
+                    "explanation": "An empty [] is a list.",
+                    "points": 10
+                },
+                {
+                    "id": "q3",
+                    "question": "Which of these is immutable in Python?",
+                    "options": [
+                        "list",
+                        "dict",
+                        "set",
+                        "tuple"
+                    ],
+                    "correct_answer": "tuple",
+                    "explanation": "Tuples are immutable; they cannot be changed after creation.",
+                    "points": 10
+                }
+            ]
+        },
+        {
+            "id": "as002",
+            "title": "SQL Basics Assessment",
+            "skill_id": "sk005",
+            "type": "mcq",
+            "difficulty": "beginner",
+            "duration_minutes": 25,
+            "passing_score": 60,
+            "created_by": "usr003",
+            "questions": [
+                {
+                    "id": "q1",
+                    "question": "Which SQL command retrieves data from a table?",
+                    "options": [
+                        "INSERT",
+                        "UPDATE",
+                        "SELECT",
+                        "DELETE"
+                    ],
+                    "correct_answer": "SELECT",
+                    "explanation": "SELECT is the DML command used to fetch data.",
+                    "points": 10
+                },
+                {
+                    "id": "q2",
+                    "question": "Which clause is used to filter rows in SQL?",
+                    "options": [
+                        "HAVING",
+                        "WHERE",
+                        "GROUP BY",
+                        "ORDER BY"
+                    ],
+                    "correct_answer": "WHERE",
+                    "explanation": "WHERE filters rows before aggregation.",
+                    "points": 10
+                }
+            ]
+        },
+        {
+            "id": "as003",
+            "title": "Machine Learning Concepts Quiz",
+            "skill_id": "sk003",
+            "type": "mcq",
+            "difficulty": "intermediate",
+            "duration_minutes": 30,
+            "passing_score": 65,
+            "created_by": "usr003",
+            "questions": [
+                {
+                    "id": "q1",
+                    "question": "Which algorithm is used for classification?",
+                    "options": [
+                        "Linear Regression",
+                        "K-Means",
+                        "Logistic Regression",
+                        "PCA"
+                    ],
+                    "correct_answer": "Logistic Regression",
+                    "explanation": "Logistic Regression outputs class probabilities, making it ideal for classification.",
+                    "points": 10
+                },
+                {
+                    "id": "q2",
+                    "question": "What does overfitting mean?",
+                    "options": [
+                        "Model performs well on training and test data",
+                        "Model performs poorly on all data",
+                        "Model performs well on training but poorly on test data",
+                        "Model performs poorly on training but well on test data"
+                    ],
+                    "correct_answer": "Model performs well on training but poorly on test data",
+                    "explanation": "Overfitting means the model memorized training data but fails to generalize.",
+                    "points": 10
+                }
+            ]
+        },
+        {
+            "id": "as004",
+            "title": "JavaScript Intermediate Test",
+            "skill_id": "sk007",
+            "type": "mcq",
+            "difficulty": "intermediate",
+            "duration_minutes": 30,
+            "passing_score": 65,
+            "created_by": "usr003",
+            "questions": [
+                {
+                    "id": "q1",
+                    "question": "What does '===' check in JavaScript?",
+                    "options": [
+                        "Value only",
+                        "Type only",
+                        "Value and type",
+                        "Neither"
+                    ],
+                    "correct_answer": "Value and type",
+                    "explanation": "=== is the strict equality operator checking both value and type.",
+                    "points": 10
+                },
+                {
+                    "id": "q2",
+                    "question": "Which method converts a JSON string to an object?",
+                    "options": [
+                        "JSON.stringify()",
+                        "JSON.parse()",
+                        "JSON.convert()",
+                        "JSON.toObject()"
+                    ],
+                    "correct_answer": "JSON.parse()",
+                    "explanation": "JSON.parse() parses a JSON string into a JavaScript object.",
+                    "points": 10
+                }
+            ]
+        }
+    ],
+    "courses": [
+        {
+            "id": "co001",
+            "title": "Python for Everybody",
+            "description": "Complete beginner course on Python programming, covering syntax, data structures, and file handling.",
+            "instructor_id": "usr003",
+            "skills_covered": [
+                "sk001",
+                "sk002"
+            ],
+            "level": "beginner",
+            "duration_hours": 18,
+            "format": "video",
+            "platform": "Coursera",
+            "url": "https://coursera.org/learn/python",
+            "rating": 4.8,
+            "enrollment_count": 25000,
+            "is_free": true,
+            "price_inr": 0,
+            "certificate": true,
+            "tags": [
+                "python",
+                "beginner",
+                "programming"
+            ],
+            "created_at": "2023-01-10T00:00:00Z"
+        },
+        {
+            "id": "co002",
+            "title": "Data Analysis with Pandas & NumPy",
+            "description": "Hands-on data analysis using Python's pandas and NumPy libraries.",
+            "instructor_id": "usr003",
+            "skills_covered": [
+                "sk002",
+                "sk004",
+                "sk013"
+            ],
+            "level": "intermediate",
+            "duration_hours": 22,
+            "format": "interactive",
+            "platform": "Udemy",
+            "url": "https://udemy.com/course/data-analysis-pandas",
+            "rating": 4.6,
+            "enrollment_count": 18000,
+            "is_free": false,
+            "price_inr": 499,
+            "certificate": true,
+            "tags": [
+                "data analysis",
+                "pandas",
+                "numpy"
+            ],
+            "created_at": "2023-03-15T00:00:00Z"
+        },
+        {
+            "id": "co003",
+            "title": "Machine Learning A-Z",
+            "description": "Comprehensive ML course covering supervised, unsupervised, and reinforcement learning.",
+            "instructor_id": "usr003",
+            "skills_covered": [
+                "sk003",
+                "sk013",
+                "sk001"
+            ],
+            "level": "intermediate",
+            "duration_hours": 40,
+            "format": "video",
+            "platform": "Udemy",
+            "url": "https://udemy.com/course/machinelearning",
+            "rating": 4.7,
+            "enrollment_count": 32000,
+            "is_free": false,
+            "price_inr": 649,
+            "certificate": true,
+            "tags": [
+                "machine learning",
+                "AI",
+                "scikit-learn"
+            ],
+            "created_at": "2022-06-01T00:00:00Z"
+        },
+        {
+            "id": "co004",
+            "title": "The Complete SQL Bootcamp",
+            "description": "Master SQL from basics to advanced queries, joins, and subqueries.",
+            "instructor_id": "usr003",
+            "skills_covered": [
+                "sk005"
+            ],
+            "level": "beginner",
+            "duration_hours": 12,
+            "format": "video",
+            "platform": "Udemy",
+            "url": "https://udemy.com/course/the-complete-sql-bootcamp",
+            "rating": 4.7,
+            "enrollment_count": 22000,
+            "is_free": false,
+            "price_inr": 399,
+            "certificate": true,
+            "tags": [
+                "sql",
+                "database",
+                "backend"
+            ],
+            "created_at": "2022-09-20T00:00:00Z"
+        },
+        {
+            "id": "co005",
+            "title": "React - The Complete Guide",
+            "description": "Learn React from scratch: hooks, context, Redux, and building full apps.",
+            "instructor_id": "usr003",
+            "skills_covered": [
+                "sk006",
+                "sk007"
+            ],
+            "level": "intermediate",
+            "duration_hours": 48,
+            "format": "video",
+            "platform": "Udemy",
+            "url": "https://udemy.com/course/react-the-complete-guide",
+            "rating": 4.8,
+            "enrollment_count": 45000,
+            "is_free": false,
+            "price_inr": 649,
+            "certificate": true,
+            "tags": [
+                "react",
+                "javascript",
+                "frontend"
+            ],
+            "created_at": "2023-02-01T00:00:00Z"
+        },
+        {
+            "id": "co006",
+            "title": "AWS Cloud Practitioner Essentials",
+            "description": "Official AWS training covering core cloud concepts and services.",
+            "instructor_id": "usr003",
+            "skills_covered": [
+                "sk009"
+            ],
+            "level": "beginner",
+            "duration_hours": 10,
+            "format": "video",
+            "platform": "AWS Training",
+            "url": "https://aws.amazon.com/training/learn-about/cloud-practitioner",
+            "rating": 4.5,
+            "enrollment_count": 15000,
+            "is_free": true,
+            "price_inr": 0,
+            "certificate": true,
+            "tags": [
+                "aws",
+                "cloud",
+                "certification"
+            ],
+            "created_at": "2023-04-10T00:00:00Z"
+        },
+        {
+            "id": "co007",
+            "title": "Statistics for Data Science",
+            "description": "Probability, distributions, hypothesis testing, and regression for data scientists.",
+            "instructor_id": "usr003",
+            "skills_covered": [
+                "sk013",
+                "sk002"
+            ],
+            "level": "intermediate",
+            "duration_hours": 16,
+            "format": "video",
+            "platform": "Coursera",
+            "url": "https://coursera.org/learn/statistics-for-data-science",
+            "rating": 4.6,
+            "enrollment_count": 12000,
+            "is_free": false,
+            "price_inr": 549,
+            "certificate": true,
+            "tags": [
+                "statistics",
+                "probability",
+                "data science"
+            ],
+            "created_at": "2022-11-05T00:00:00Z"
+        },
+        {
+            "id": "co008",
+            "title": "UI/UX Design Masterclass",
+            "description": "End-to-end product design with Figma, user research, and prototyping.",
+            "instructor_id": "usr003",
+            "skills_covered": [
+                "sk015",
+                "sk011"
+            ],
+            "level": "beginner",
+            "duration_hours": 20,
+            "format": "video",
+            "platform": "Udemy",
+            "url": "https://udemy.com/course/ux-design-masterclass",
+            "rating": 4.6,
+            "enrollment_count": 9000,
+            "is_free": false,
+            "price_inr": 499,
+            "certificate": true,
+            "tags": [
+                "ui/ux",
+                "figma",
+                "design"
+            ],
+            "created_at": "2023-05-15T00:00:00Z"
+        }
+    ],
+    "users": [
+        {
+            "id": "usr001",
+            "name": "Ananya Patel",
+            "email": "ananya.patel@student.edu",
+            "password_hash": "hashed_pw_001",
+            "role": "student",
+            "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=ananya",
+            "education": {
+                "institution": "KIIT University, Bhubaneswar",
+                "degree": "B.Tech",
+                "field_of_study": "Computer Science",
+                "year_of_study": 3,
+                "graduation_year": 2026
+            },
+            "career_goal": "jr001",
+            "enrolled_courses": [
+                "co001",
+                "co002",
+                "co007"
+            ],
+            "completed_assessments": [
+                "as001",
+                "as002"
+            ],
+            "skill_scores": [
+                {
+                    "skill_id": "sk001",
+                    "current_level": 55,
+                    "last_assessed": "2024-11-10"
+                },
+                {
+                    "skill_id": "sk002",
+                    "current_level": 40,
+                    "last_assessed": "2024-11-12"
+                },
+                {
+                    "skill_id": "sk003",
+                    "current_level": 20,
+                    "last_assessed": "2024-11-12"
+                },
+                {
+                    "skill_id": "sk005",
+                    "current_level": 45,
+                    "last_assessed": "2024-11-14"
+                },
+                {
+                    "skill_id": "sk013",
+                    "current_level": 35,
+                    "last_assessed": "2024-11-12"
+                }
+            ],
+            "created_at": "2024-08-01T10:00:00Z",
+            "updated_at": "2024-11-14T12:00:00Z"
+        },
+        {
+            "id": "usr002",
+            "name": "Rohan Mehta",
+            "email": "rohan.mehta@student.edu",
+            "password_hash": "hashed_pw_002",
+            "role": "student",
+            "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=rohan",
+            "education": {
+                "institution": "NIT Rourkela",
+                "degree": "B.Tech",
+                "field_of_study": "Information Technology",
+                "year_of_study": 4,
+                "graduation_year": 2025
+            },
+            "career_goal": "jr002",
+            "enrolled_courses": [
+                "co005",
+                "co004"
+            ],
+            "completed_assessments": [
+                "as004"
+            ],
+            "skill_scores": [
+                {
+                    "skill_id": "sk006",
+                    "current_level": 62,
+                    "last_assessed": "2024-11-01"
+                },
+                {
+                    "skill_id": "sk007",
+                    "current_level": 70,
+                    "last_assessed": "2024-11-01"
+                },
+                {
+                    "skill_id": "sk008",
+                    "current_level": 40,
+                    "last_assessed": "2024-11-01"
+                },
+                {
+                    "skill_id": "sk005",
+                    "current_level": 50,
+                    "last_assessed": "2024-11-03"
+                }
+            ],
+            "created_at": "2024-07-20T09:00:00Z",
+            "updated_at": "2024-11-03T15:00:00Z"
+        },
+        {
+            "id": "usr003",
+            "name": "Dr. Priya Sharma",
+            "email": "priya.sharma@instructor.edu",
+            "password_hash": "hashed_pw_003",
+            "role": "instructor",
+            "avatar_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=priya",
+            "education": {
+                "institution": "IIT Bombay",
+                "degree": "Ph.D",
+                "field_of_study": "Computer Science",
+                "year_of_study": null,
+                "graduation_year": 2015
+            },
+            "career_goal": null,
+            "enrolled_courses": [],
+            "completed_assessments": [],
+            "skill_scores": [],
+            "created_at": "2023-06-01T08:00:00Z",
+            "updated_at": "2024-10-10T10:00:00Z"
+        },
+        {
+            "id": "usr_674e2dbd",
+            "name": "Deepak",
+            "email": "deepakranjandas965@gmail.com",
+            "password_hash": "scrypt:32768:8:1$P0Xlp0ZHVkcFWnS6$3430e060f83d023b22a70dfc60da1ae4fa3ae83141dd397cc0fbdcc4448399bec4b3db8d6b9c7677f454bc390c9bf697d76398963409123f35b764aa89d33e9a",
+            "role": "student",
+            "created_at": "2026-03-18T03:27:00.513547Z",
+            "skill_scores": []
+        }
+    ],
+    "skill_gap_reports": [
+        {
+            "id": "sgr001",
+            "user_id": "usr001",
+            "target_role_id": "jr001",
+            "generated_at": "2024-11-14T13:00:00Z",
+            "overall_readiness_score": 46.5,
+            "estimated_time_to_ready_weeks": 24,
+            "gap_analysis": [
+                {
+                    "skill_id": "sk001",
+                    "skill_name": "Python Programming",
+                    "required_level": 70,
+                    "current_level": 55,
+                    "gap": 15,
+                    "priority": "medium",
+                    "recommended_courses": [
+                        "co001"
+                    ]
+                },
+                {
+                    "skill_id": "sk002",
+                    "skill_name": "Data Analysis",
+                    "required_level": 75,
+                    "current_level": 40,
+                    "gap": 35,
+                    "priority": "high",
+                    "recommended_courses": [
+                        "co002"
+                    ]
+                },
+                {
+                    "skill_id": "sk003",
+                    "skill_name": "Machine Learning",
+                    "required_level": 70,
+                    "current_level": 20,
+                    "gap": 50,
+                    "priority": "high",
+                    "recommended_courses": [
+                        "co003"
+                    ]
+                },
+                {
+                    "skill_id": "sk005",
+                    "skill_name": "SQL & Databases",
+                    "required_level": 60,
+                    "current_level": 45,
+                    "gap": 15,
+                    "priority": "medium",
+                    "recommended_courses": [
+                        "co004"
+                    ]
+                },
+                {
+                    "skill_id": "sk013",
+                    "skill_name": "Statistics & Probability",
+                    "required_level": 65,
+                    "current_level": 35,
+                    "gap": 30,
+                    "priority": "high",
+                    "recommended_courses": [
+                        "co007"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sgr002",
+            "user_id": "usr002",
+            "target_role_id": "jr002",
+            "generated_at": "2024-11-05T10:00:00Z",
+            "overall_readiness_score": 62.0,
+            "estimated_time_to_ready_weeks": 14,
+            "gap_analysis": [
+                {
+                    "skill_id": "sk006",
+                    "skill_name": "Web Development (React)",
+                    "required_level": 75,
+                    "current_level": 62,
+                    "gap": 13,
+                    "priority": "medium",
+                    "recommended_courses": [
+                        "co005"
+                    ]
+                },
+                {
+                    "skill_id": "sk007",
+                    "skill_name": "JavaScript",
+                    "required_level": 80,
+                    "current_level": 70,
+                    "gap": 10,
+                    "priority": "medium",
+                    "recommended_courses": [
+                        "co005"
+                    ]
+                },
+                {
+                    "skill_id": "sk008",
+                    "skill_name": "Node.js & Backend",
+                    "required_level": 70,
+                    "current_level": 40,
+                    "gap": 30,
+                    "priority": "high",
+                    "recommended_courses": []
+                },
+                {
+                    "skill_id": "sk005",
+                    "skill_name": "SQL & Databases",
+                    "required_level": 60,
+                    "current_level": 50,
+                    "gap": 10,
+                    "priority": "low",
+                    "recommended_courses": [
+                        "co004"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sgr_00a1e6a5",
+            "user_id": "usr_674e2dbd",
+            "target_role_id": "jr007",
+            "generated_at": "2026-03-18T03:27:33.969628Z",
+            "overall_readiness_score": 44,
+            "estimated_time_to_ready_weeks": 30,
+            "gap_analysis": [
+                {
+                    "skill_name": "C++",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "Object Oriented Programming",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "Git",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "System Design",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "Databases",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                }
+            ]
+        },
+        {
+            "id": "sgr_de53460b",
+            "user_id": "usr_674e2dbd",
+            "target_role_id": "jr007",
+            "generated_at": "2026-03-18T03:38:27.396104Z",
+            "overall_readiness_score": 44,
+            "estimated_time_to_ready_weeks": 30,
+            "gap_analysis": [
+                {
+                    "skill_name": "C++",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "Object Oriented Programming",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "Git",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "System Design",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "Databases",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                }
+            ]
+        },
+        {
+            "id": "sgr_64ecfb75",
+            "user_id": "usr_674e2dbd",
+            "target_role_id": "jr005",
+            "generated_at": "2026-03-18T03:46:08.809730Z",
+            "overall_readiness_score": 33,
+            "estimated_time_to_ready_weeks": 36,
+            "gap_analysis": [
+                {
+                    "skill_name": "Node.js",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "REST APIs",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "Databases",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "Authentication",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "Microservices",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "Git",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                }
+            ]
+        },
+        {
+            "id": "sgr_d80243a3",
+            "user_id": "usr_674e2dbd",
+            "target_role_id": "jr009",
+            "generated_at": "2026-03-18T11:32:18.774766Z",
+            "overall_readiness_score": 0,
+            "estimated_time_to_ready_weeks": 48,
+            "gap_analysis": [
+                {
+                    "skill_name": "Linux",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "Docker",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "Kubernetes",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "CI/CD",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "Jenkins",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "GitHub Actions",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "Cloud Platforms",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                },
+                {
+                    "skill_name": "Infrastructure Automation",
+                    "priority": "high",
+                    "weeks_to_master": 6
+                }
+            ]
+        }
+    ],
+    "recommendations": [
+        {
+            "id": "rec001",
+            "user_id": "usr001",
+            "type": "course",
+            "reference_id": "co003",
+            "reason": "Machine Learning gap is 50 points \u00e2\u20ac\u201d highest priority skill for Data Scientist role",
+            "score": 0.97,
+            "created_at": "2024-11-14T13:01:00Z"
+        },
+        {
+            "id": "rec002",
+            "user_id": "usr001",
+            "type": "course",
+            "reference_id": "co002",
+            "reason": "Data Analysis gap of 35 points \u00e2\u20ac\u201d critical for Data Scientist readiness",
+            "score": 0.91,
+            "created_at": "2024-11-14T13:01:00Z"
+        },
+        {
+            "id": "rec003",
+            "user_id": "usr001",
+            "type": "assessment",
+            "reference_id": "as003",
+            "reason": "Take the ML assessment to benchmark your current level before enrolling in ML course",
+            "score": 0.88,
+            "created_at": "2024-11-14T13:01:00Z"
+        },
+        {
+            "id": "rec004",
+            "user_id": "usr002",
+            "type": "course",
+            "reference_id": "co005",
+            "reason": "React skill gap of 13 points \u00e2\u20ac\u201d near ready, a targeted React course will close the gap",
+            "score": 0.89,
+            "created_at": "2024-11-05T10:01:00Z"
+        },
+        {
+            "id": "rec005",
+            "user_id": "usr002",
+            "type": "skill",
+            "reference_id": "sk010",
+            "reason": "DevOps & CI/CD is valuable for Full Stack roles \u00e2\u20ac\u201d start building this early",
+            "score": 0.74,
+            "created_at": "2024-11-05T10:01:00Z"
+        }
+    ]
+}
